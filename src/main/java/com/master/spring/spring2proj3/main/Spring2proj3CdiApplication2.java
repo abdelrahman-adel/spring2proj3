@@ -20,7 +20,7 @@ public class Spring2proj3CdiApplication2 {
 
 		SomeCdiBusiness someCdiBusiness = applicationContext.getBean(SomeCdiBusiness.class);
 
-		LOGGER.info("{}", someCdiBusiness);
+		LOGGER.info("{} - {}", someCdiBusiness, someCdiBusiness.getSomeCdiDao());
 	}
 
 }

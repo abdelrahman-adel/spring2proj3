@@ -1,10 +1,12 @@
 package com.master.spring.spring2proj3.cdi;
 
-import org.springframework.stereotype.Component;
+import javax.inject.Inject;
+import javax.inject.Named;
 
-@Component
+@Named
 public class SomeCdiBusiness {
 
+	@Inject
 	private SomeCdiDao someCdiDao;
 
 	public SomeCdiDao getSomeCdiDao() {
