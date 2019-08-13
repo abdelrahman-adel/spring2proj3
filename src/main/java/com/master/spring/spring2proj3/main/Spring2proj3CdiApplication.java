@@ -11,12 +11,12 @@ import com.master.spring.spring2proj3.cdi.SomeCdiBusiness;
 
 @ComponentScan(basePackages = { "com.master.spring.spring2proj3.cdi" })
 @SpringBootApplication
-public class Spring2proj3CdiApplication2 {
+public class Spring2proj3CdiApplication {
 
-	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj3CdiApplication2.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj3CdiApplication.class);
 
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = SpringApplication.run(Spring2proj3CdiApplication2.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(Spring2proj3CdiApplication.class, args);
 
 		SomeCdiBusiness someCdiBusiness = applicationContext.getBean(SomeCdiBusiness.class);
 
