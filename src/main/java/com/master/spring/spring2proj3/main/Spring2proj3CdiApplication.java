@@ -15,12 +15,15 @@ public class Spring2proj3CdiApplication {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj3CdiApplication.class);
 
-	public static void main(String[] args) {
-		ApplicationContext applicationContext = SpringApplication.run(Spring2proj3CdiApplication.class, args);
-
-		SomeCdiBusiness someCdiBusiness = applicationContext.getBean(SomeCdiBusiness.class);
-
-		LOGGER.info("{} - {}", someCdiBusiness, someCdiBusiness.getSomeCdiDao());
-	}
+	/**
+	 * Commented for maven build (two main methods in one application)
+	 */
+//	public static void main(String[] args) {
+//		ApplicationContext applicationContext = SpringApplication.run(Spring2proj3CdiApplication.class, args);
+//
+//		SomeCdiBusiness someCdiBusiness = applicationContext.getBean(SomeCdiBusiness.class);
+//
+//		LOGGER.info("{} - {}", someCdiBusiness, someCdiBusiness.getSomeCdiDao());
+//	}
 
 }
