@@ -1,19 +1,13 @@
 package com.master.spring.spring2proj3.main;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-
-import com.master.spring.spring2proj3.cdi.SomeCdiBusiness;
 
 @ComponentScan(basePackages = { "com.master.spring.spring2proj3.cdi" })
 @SpringBootApplication
 public class Spring2proj3CdiApplication {
 
-	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj3CdiApplication.class);
+//	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj3CdiApplication.class);
 
 	/**
 	 * Commented for maven build (two main methods in one application)
